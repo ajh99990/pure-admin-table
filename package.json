@@ -1,10 +1,10 @@
 {
-  "name": "@mls/table",
+  "name": "@ygfree/table",
   "version": "3.1.2",
   "packageManager": "pnpm@8.6.10",
   "description": "二次封装element-plus的Table，提供灵活的配置项",
   "keywords": [
-    "@mls/table",
+    "@ygfree/table",
     "element-plus",
     "typescript",
     "el-table",
