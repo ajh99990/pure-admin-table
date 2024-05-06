@@ -1,10 +1,10 @@
 {
-  "name": "@pureadmin/table",
+  "name": "@mls/table",
   "version": "3.1.2",
   "packageManager": "pnpm@8.6.10",
   "description": "二次封装element-plus的Table，提供灵活的配置项",
   "keywords": [
-    "@pureadmin/table",
+    "@mls/table",
     "element-plus",
     "typescript",
     "el-table",
@@ -13,15 +13,10 @@
     "vite",
     "tsx"
   ],
-  "homepage": "https://github.com/pure-admin/pure-admin-table/tree/main/#readme",
-  "bugs": {
-    "url": "https://github.com/pure-admin/pure-admin-table/issues"
-  },
   "license": "MIT",
   "author": "xiaoxian521",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pure-admin/pure-admin-table.git"
+    "type": "git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
