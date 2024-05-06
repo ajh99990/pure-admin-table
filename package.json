@@ -19,6 +19,7 @@
     "type": "git"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "main": "dist/index.umd.js",
