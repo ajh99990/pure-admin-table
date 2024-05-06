@@ -208,6 +208,10 @@ export default defineComponent({
                 attrs
               })
             );
+          } else {
+            if (children?.length > 0) {
+              return children.map(renderColumns);
+            }
           }
         }
       };
@@ -242,10 +246,6 @@ export default defineComponent({
               ...defaultSlots
             }
           : defaultSlots;
-
-      if (children?.length > 0) {
-        scopedSlots = children.map(renderColumns);
-      }
 
       return (
         <ElTableColumn
