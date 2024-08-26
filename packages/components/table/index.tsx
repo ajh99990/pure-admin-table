@@ -336,11 +336,15 @@ export default defineComponent({
       /** 设置表头为 `sticky` 布局 */
       setHeaderSticky
     });
+    /** 让el-table始终具有border，这样列宽度调整的功能就默认开启了 */
+    const borderOption={border:true}
+    //isHasBorder=true代表用户开启了border选项，这时候应该把边框样式放出来，否则应该隐藏边框样式
+    const borderDynamicClass = computed(()=>props.border?"pure-table pure-table-border_show":"pure-table pure-table-border_hide")
 
     let renderTable = () => {
       return (
         <>
-          <ElTable {...props} {...attrs} ref={`TableRef${unref(tableKey)}`}>
+          <ElTable {...props} {...borderOption} {...attrs} ref={`TableRef${unref(tableKey)}`}>
             {{
               default: () => unref(columns).map(renderColumns),
               append: () => slots.append && slots.append(),
@@ -376,7 +380,7 @@ export default defineComponent({
     let renderPureTable = () => {
       return (
         <div
-          class="pure-table"
+          class={borderDynamicClass.value}
           style="width:100%"
           v-loading={unref(loading)}
           {...unref(loadingBackground)}
