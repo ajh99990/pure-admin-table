@@ -1,6 +1,6 @@
 import { dataMock } from "./mock";
 import { useI18n } from "vue-i18n";
-import { ElDivider } from "element-plus";
+import { ElDivider } from "@ygfree/element-plus";
 import { useDark, delay } from "@pureadmin/utils";
 import { type Ref, h, ref, reactive, onMounted, watch } from "vue";
 import type {

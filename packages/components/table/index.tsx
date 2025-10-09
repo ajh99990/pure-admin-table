@@ -26,7 +26,7 @@ import {
   ElPagination,
   ElConfigProvider,
   ElLoadingDirective
-} from "element-plus";
+} from "@ygfree/element-plus";
 import {
   nameHyphenate,
   isFunction,
@@ -393,6 +393,7 @@ export default defineComponent({
                   ? unref(locales)
                   : unref(globalI18n) || unref(globalLocale)
               }
+              zIndex={3000}
             >
               {renderTable()}
             </ElConfigProvider>

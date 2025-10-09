@@ -1,6 +1,6 @@
 {
   "name": "@ygfree/table",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "packageManager": "pnpm@8.6.10",
   "description": "二次封装element-plus的Table，提供灵活的配置项",
   "keywords": [
@@ -57,13 +57,13 @@
     "prepare": "husky install"
   },
   "peerDependencies": {
-    "element-plus": "^2.0.0"
+    "@ygfree/element-plus": "2.10.7-16"
   },
   "dependencies": {
-    "element-plus": "^2.6.0",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@ygfree/element-plus": "2.10.7-16",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@commitlint/types": "^18.4.3",
